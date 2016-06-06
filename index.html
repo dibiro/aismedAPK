@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AISMED</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="lib/materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="lib/fa/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body ng-app="hospitales" ng-controller="listado" >
+	  <div class=" {{colorfondo}}">
+	  	
+      <!-- barra de navegacion -->
+      <div id="cabezera" class=" {{colorfondo}}">
+        <a href="#" class="{{colortext}}-text iconosgrandes">AISMED</a>
+        <div id="" class="right">
+          <a class="{{colortext}}-text iconosgrandes" ng-show="panelsh" href="#">{{actual}}</a> 
+          <a class="{{colortext}}-text iconosgrandes" ng-show="lax" href="#"><i class="fa fa-times"> </i></a> 
+          <a class="{{colortext}}-text iconosgrandes modal-trigger" href="#Confi" ng-show="panelp"><i class="fa fa-wrench"> </i></a> 
+          <a class="{{colortext}}-text iconosgrandes modal-trigger" href="#Ayuda" ng-show="panelp">?</a> 
+          <a class="waves-effect waves-light right {{colortext}}-text iconosgrandes" ng-show="panelm" ng-click="recargarelmapa()"><i class="fa fa- fa-refresh"></i></a>
+          <a class="waves-effect waves-light right {{colortext}}-text iconosgrandes" ng-show="panelm" ng-click="cargarfoto()" id="cargarfoto"><i class="fa fa-map"></i></a>
+          <a class="waves-effect waves-light right {{colortext}}-text iconosgrandes" ng-show="panelm" ng-click="tomarfoto()" id="tomarfoto"><i class="fa fa-camera"></i></a>
+        </div>
+      </div>
+        
+      <!-- Nav tabs -->
+      <ul id="tabscabezera" class="tabs {{colorfondo}} tabssinscroll">
+        <li class="tab col s4"><a class="{{colortext}}-text waves-effect waves-light" class="active iconosgrandes" href="#indexdiv">Inicio</a></li>
+        <li class="tab col s2" ng-click="changetag(1)"><a class="{{colortext}}-text waves-effect waves-light" class=" iconosgrandes" href="#Hospitales"><i class="fa fa-hospital-o"></i></a></li>
+        <li class="tab col s2" ng-click="changetag(2)"><a class="{{colortext}}-text waves-effect waves-light" class="iconosgrandes" href="#antemapa"><i class="fa fa-map-marker fa-th-large"></i></a></li>
+        <li class="tab col s2" ng-click="changetag(3)"><a class="{{colortext}}-text waves-effect waves-light" class="iconosgrandes" href="#Horarios"><i class="fa fa-clock-o"></i></a></li>
+        <li class="tab col s2" ng-click="changetag(3)"><a class="{{colortext}}-text waves-effect waves-light" class="iconosgrandes" href="#Servicios"><i class="fa fa-stethoscope"></i> </a></li>
+        <div class="indicator {{colortext}}" style="z-index:1"></div>
+      </ul>
+	  </div>
+      <!-- contenido de la lista de hospitales -->
+      <div id="indexdiv" class="col s12" style="overflow: hidden;">
+        <img id="ambulancia" src="img/ambulancia.jpeg" width="100%" height="100%" >
+      </div>
+      <div id="Hospitales" class="col s12">
+        <nav id="navbusqueda">
+          <div class="nav-wrapper {{colorfondo}}">
+            <div class="nav-wrapper {{colorfondo}}">
+              <div class="input-field {{colorfondo}}">
+                <input ng-focus="borrar=true" class="{{colorfondo}}" id="search" type="search" ng-model="filtro">
+                <label for="search"><i ng-hide="borrar" class="fa fa-search {{colortext}}-text"></i> <i ng-click="filtro=''" ng-show="borrar" class="fa fa-times {{colortext}}-text"></i></label>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <ul class="collapsible" data-collapsible="accordion" >
+          <li ng-repeat="x in datos | filter : {name:filtro}">
+            <div class="collapsible-header" ng-click="cambiarhospital(x)"> {{ x.name }}</div>
+            <div class="collapsible-body">
+            	<p>Direccion: {{ x.direccion }}</p>
+            	<p>Telefonos: {{ x.telefonos }}</p>
+            	<p>Fax: {{ x.fax }}</p>
+            	<p>Email: {{ x.email }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- contenido del mapa -->
+      <div id="antemapa" class="col s12">
+        <div id="Mapa" style="overflow:auto;">
+        </div>
+      </div>
+      <!-- contenido del horarios -->
+      <div id="Horarios" class="col s12">
+        <ul class="collapsible" data-collapsible="accordion">
+            <li ng-repeat="x in horarios">
+              <div class="collapsible-header" >{{ x.name }}</div>
+              <div class="collapsible-body">
+                <p>Desde: {{ x.horaint }}, Hasta: {{ x.horafin }}</p>
+                <p>{{ x.descripcion }}</p>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <!-- contenido de los servicion que presta la intitucion -->
+      <div id="Servicios" class="col s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li ng-repeat="x in servicios">
+            <div class="collapsible-header {{x.clase}}" >{{ x.name }}</div>
+            <div class="collapsible-body {{x.clase}} lighten-3"><p>{{ x.descripcion }}</p></div>
+          </li>
+        </ul>
+      </div>
+    <!-- contenido del aria de configuraciones -->
+    <div id="Confi" class="modal bottom-sheet" height="100%">
+      <div class="modal-content">
+        <div class="input-field col s12">
+          <select id="colorfondos" ng-model="colorfondo" ng-change="changecolorfondo()">
+            <option value="white" class="white">Blanco</option>
+            <option value="blue" class="blue">Azul</option>
+            <option value="red" class="red">Rojo</option>
+            <option value="green" class="green">Verde</option>
+            <option value="pink" class="pink">Rosado</option>
+            <option value="purple" class="purple">Pulpura</option>
+            <option value="deep-purple" class="deep-purple">Morado</option>
+            <option value="indigo" class="indigo">Índigo</option>
+            <option value="teal" class="teal">Teal</option>
+            <option value="cyan" class="cyan">Cian</option>
+            <option value="light-blue" class="light-blue">Azul Claro</option>
+            <option value="light-green" class="light-green">Verde Claro</option>
+            <option value="lime" class="lime">Lima</option>
+            <option value="yellow" class="yellow">Amarillo</option>
+            <option value="amber" class="amber">Ambar</option>
+            <option value="orange" class="orange">Naranga</option>
+            <option value="deep-orange" class="deep-orange">Naranga Oscuro</option>
+            <option value="brown" class="brown">Maroon</option>
+            <option value="black" class="black" selected>Negro</option>
+          </select>          
+          <label>Color de fondo</label>
+        </div>
+        <br>
+        <br>
+        <div class="input-field col s12">
+          <select id="colortexts" ng-model="colortext" ng-change="changecolortext()">
+            <option value="white" class="white" selected>Blanco</option>
+            <option value="blue" class="blue">Azul</option>
+            <option value="red" class="red">Rojo</option>
+            <option value="green" class="green">Verde</option>
+            <option value="pink" class="pink">Rosado</option>
+            <option value="purple" class="purple">Pulpura</option>
+            <option value="deep-purple" class="deep-purple">Morado</option>
+            <option value="indigo" class="indigo">Índigo</option>
+            <option value="teal" class="teal">Teal</option>
+            <option value="black" class="black">Negro</option>
+            <option value="cyan" class="cyan">Cian</option>
+            <option value="light-blue" class="light-blue">Azul Claro</option>
+            <option value="light-green" class="light-green">Verde Claro</option>
+            <option value="lime" class="lime">Lima</option>
+            <option value="yellow" class="yellow">Amarillo</option>
+            <option value="amber" class="amber">Ambar</option>
+            <option value="orange" class="orange">Naranga</option>
+            <option value="deep-orange" class="deep-orange">Naranga Oscuro</option>
+            <option value="brown" class="brown">Maroon</option>
+          </select>
+          <label>Color de letras</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Listo!</a>
+      </div>
+    </div>
+    <!-- contenido del aria de ayuda -->
+    <div id="Ayuda" class="modal bottom-sheet">
+      <div class="modal-content">
+        <p><i class="fa fa-times"></i> Este icono solo aparecerá mientras no tengas seleccionado ninguna institución</p>
+        <p><i class="fa fa-wrench"></i> Configuración de la aplicación </p>
+        <p><i class="fa fa-hospital-o"></i> Visualización de instituciones disponibles </p>
+        <p><i class="fa fa-map-marker"></i> Visualización del mapa </p>
+        <p><i class="fa fa-clock-o"></i> Visualización de la lista de horarios para la institución. NOTA: debes haber seleccionado una institución antes de poder visualizar estos datos</p>
+        <p><i class="fa fa-stethoscope"></i> Visualización de servicios para la institución. NOTA: debes haber seleccionado una institución antes de poder visualizar estos datos</p>
+        <p><i class="fa fa-camera"></i> Toma una foto del mapa actual, NOTA: Solo se almacena la última foto que tomaste </p>
+        <p><i class="fa fa-map"></i> Carga la última foto tomada</p>
+        <p><i class="fa fa-refresh"></i> Refresca el mapa, NOTA: debe usarse después que se carga la foto para poder utilizar el mapa nuevamente </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Listo!</a>
+      </div>
+    </div>
+
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/materialize/js/materialize.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angularrecur.js"></script>
+    <script src="js/notify.min.js"></script>
+    <script src="js/controlador_hospitales.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

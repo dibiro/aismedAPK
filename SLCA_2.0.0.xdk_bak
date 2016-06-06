@@ -1,0 +1,548 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "creationData": {
+      "type": "Import",
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "",
+      "projectGuid": "dda8bfa2-979d-487a-9253-1400aebfdb85",
+      "lastModifiedDate": 1460991470009,
+      "creationDate": 1455906765521
+    },
+    "sourceDirectory": "",
+    "cordovaPluginsDirectory": "plugins",
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "testDirectory": "test",
+    "startFile": "index.html",
+    "projectTags": [],
+    "projectFiles": {},
+    "projectDirectories": {
+      "xdk": {
+        "settings": {
+          "project": {
+            "XDK-generated": "true"
+          }
+        }
+      }
+    },
+    "libraries": [],
+    "cordovaPlugins": [
+      {
+        "version": "1.1.0",
+        "sourceLocation": "",
+        "selectedState": "Included",
+        "name": "Device",
+        "originType": "cordova.io",
+        "id": "cordova-plugin-device",
+        "origin": "cordova-plugin-device",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "1eae5d64",
+        "gitref": "",
+        "description": "Cordova Device Plugin"
+      },
+      {
+        "version": "2.1.0",
+        "sourceLocation": "",
+        "selectedState": "Included",
+        "name": "Splashscreen",
+        "originType": "cordova.io",
+        "id": "cordova-plugin-splashscreen",
+        "origin": "cordova-plugin-splashscreen",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "170efb68",
+        "gitref": "",
+        "description": "Cordova Splashscreen Plugin"
+      },
+      {
+        "id": "cordova-plugin-geolocation",
+        "name": "Geolocation",
+        "version": "1.0.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-geolocation",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-geolocation",
+        "selectedState": "Included",
+        "checksum": "2cb3083e",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION"
+          ]
+        },
+        "description": "Cordova Geolocation Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-file",
+        "name": "File",
+        "version": "2.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file",
+        "selectedState": "Included",
+        "checksum": "a32414d6",
+        "dependsOn": [],
+        "topLevel": false,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-media-capture"
+        ]
+      },
+      {
+        "id": "cordova-plugin-media-capture",
+        "name": "Capture",
+        "version": "1.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-media-capture",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-media-capture",
+        "selectedState": "Included",
+        "checksum": "c1bfba11",
+        "dependsOn": [
+          "cordova-plugin-file"
+        ],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.RECORD_AUDIO",
+            "android.permission.RECORD_VIDEO",
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova Media Capture Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-sqlite-storage",
+        "name": "Cordova sqlite storage plugin",
+        "version": "0.7.14",
+        "originType": "cordova.io",
+        "origin": "cordova-sqlite-storage",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-sqlite-storage",
+        "selectedState": "Included",
+        "checksum": "d2342c81",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.3.0",
+        "author": "litehelpers (various)",
+        "permissions": {},
+        "description": "Native interface to SQLite for PhoneGap/Cordova. Allows you to use more storage and provides more flexibility than the standard Web SQL database (window.openDatabase).",
+        "data": {},
+        "dependedBy": []
+      }
+    ],
+    "serviceMethods": [],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "AISMED",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [
+          {
+            "relPath": "iconos/icono48.png",
+            "density": "mdpi",
+            "height": 48,
+            "width": 48
+          },
+          {
+            "relPath": "iconos/icono72.png",
+            "density": "hdpi",
+            "height": 72,
+            "width": 72
+          },
+          {
+            "relPath": "iconos/icono.png",
+            "density": "xhdpi",
+            "height": 96,
+            "width": 96
+          },
+          {
+            "relPath": "iconos/icono362.png",
+            "density": "ldpi",
+            "height": 36,
+            "width": 36
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "iconos/vertical720.png",
+            "density": "xhdpi",
+            "height": 960,
+            "width": 720,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/vertical480.png",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/vertical320.png",
+            "density": "mdpi",
+            "height": 470,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/vertical320-2.png",
+            "density": "ldpi",
+            "height": 426,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/horizontal960.png",
+            "density": "xhdpi",
+            "height": 720,
+            "width": 960,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "iconos/horizontal640.png",
+            "density": "hdpi",
+            "height": 480,
+            "width": 640,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "iconos/horizontal470.png",
+            "density": "mdpi",
+            "height": 320,
+            "width": 470,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "iconos/horizontal426.png",
+            "density": "ldpi",
+            "height": 320,
+            "width": 426,
+            "orientation": "landscape"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "14",
+        "cordovaCLIVersion_": "5.1.1"
+      },
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android-Crosswalk",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "AISMED",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [
+          {
+            "relPath": "iconos/icono362.png",
+            "density": "ldpi",
+            "height": 36,
+            "width": 36
+          },
+          {
+            "relPath": "iconos/icono48.png",
+            "density": "mdpi",
+            "height": 48,
+            "width": 48
+          },
+          {
+            "relPath": "iconos/icono72.png",
+            "density": "hdpi",
+            "height": 72,
+            "width": 72
+          },
+          {
+            "relPath": "iconos/icono.png",
+            "density": "xhdpi",
+            "height": 96,
+            "width": 96
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "iconos/vertical320-2.png",
+            "density": "ldpi",
+            "height": 426,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/vertical320.png",
+            "density": "mdpi",
+            "height": 470,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/vertical480.png",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/vertical720.png",
+            "density": "xhdpi",
+            "height": 960,
+            "width": 720,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "iconos/horizontal426.png",
+            "density": "ldpi",
+            "height": 320,
+            "width": 426,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "iconos/horizontal470.png",
+            "density": "mdpi",
+            "height": 320,
+            "width": 470,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "iconos/horizontal640.png",
+            "density": "hdpi",
+            "height": 480,
+            "width": 640,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "iconos/horizontal960.png",
+            "density": "xhdpi",
+            "height": 720,
+            "width": 960,
+            "orientation": "landscape"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "15",
+        "cordovaCLIVersion_": "5.1.1"
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-target": "6",
+          "ios-configuration": "adhoc"
+        },
+        "isActive_": true,
+        "appName_": "AISMED",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "cordovaCLIVersion_": "5.1.1",
+        "iosProvs_": []
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "AISMED",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "5.1.1"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "SLCA",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "SLCA",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "SLCA",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "SLCA",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "SLCA",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "5.1.1"
+      }
+    }
+  }
+}

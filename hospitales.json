@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "hospital 1",
+    "direccion": "aksjdgahdasjkdghaksjdgaksjdasd",
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "id": 2,
+    "name": "hospital 2",
+    "direccion": "aksjdgahdasjkdghaksjdgaksjdasd",
+    "latitud": 1,
+    "longitud": 1
+  }
+]

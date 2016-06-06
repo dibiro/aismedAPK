@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>S.L.C.A</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9JC1dTG8NTS-awf4WCvA6hXaNE0qtwC0"></script>
+    <link href="lib/materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="lib/fa/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+  </head>
+  <body class="" style="">
+      <div class=" black">
+        <a href="#" class="white-text iconosgrandes">S.L.C.A</a>
+        <div id="" class="right">
+          <a class="white-text iconosgrandes" href="index.html"><i class="fa fa-hospital-o"> </i></a> 
+          <a class="white-text iconosgrandes" href="farmacia.html"><i class="fa fa-medkit"> </i></a>
+        </div>
+      </div>
+        
+      <!-- Nav tabs -->
+      <ul class="tabs black tabssinscroll">
+        <li class="tab col s6"><a class="white-text waves-effect waves-light" class="active iconosgrandes" href="#Hospitales"><i class="fa fa-medkit"></i></a></li>
+        <li class="tab col s6"><a class="white-text waves-effect waves-light" class="iconosgrandes" href="#Mapa"><i class="fa fa-map-marker fa-th-large"></i></a></li>
+        <div class="indicator white" style="z-index:1"></div>
+      </ul>
+      <div id="Hospitales" class="col s12">
+        <div id="Hospitales" ng-app="hospitales" ng-controller="listado" class="col s12">
+          <ul ="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">farmacia de turno</div>
+              <div class="collapsible-body"><p>datos</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="antemapa">
+        <div id="Mapa"  class="col s12 mapass">
+        </div>
+      </div>
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/materialize/js/materialize.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angularrecur.js"></script>
+    <script src="js/controlador_hospitales.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

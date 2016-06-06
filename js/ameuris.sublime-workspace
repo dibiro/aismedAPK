@@ -1,0 +1,826 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ine",
+				"innerHTML	Element"
+			],
+			[
+				"get",
+				"get	$.getScript()"
+			],
+			[
+				"am",
+				"ambulancia.jpeg"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"wi",
+				"width	Attr"
+			],
+			[
+				"st",
+				"style	Attr"
+			],
+			[
+				"pos",
+				"posee"
+			],
+			[
+				"f",
+				"ffloat	FloatField (ffloat)"
+			],
+			[
+				"ff",
+				"ffloat	FloatField (ffloat)"
+			],
+			[
+				"de",
+				"descripcion"
+			],
+			[
+				"mt",
+				"mtime	TimeField (mtime)"
+			],
+			[
+				"mi",
+				"mint	IntegerField (mint)"
+			],
+			[
+				"di",
+				"direccion	(models.py)"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"go",
+				"googlemapa"
+			],
+			[
+				"ge",
+				"get	$.getScript()"
+			],
+			[
+				"fil",
+				"filtro"
+			],
+			[
+				"getel",
+				"getElementById"
+			],
+			[
+				"jq",
+				"jQuery.map	jQuery.map"
+			],
+			[
+				"ma",
+				"mapa"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"loc",
+				"localStorage"
+			],
+			[
+				"hor",
+				"horarios"
+			],
+			[
+				"des",
+				"descripcion	(index.html)"
+			],
+			[
+				"hora",
+				"horaint	(index.html)"
+			],
+			[
+				"la",
+				"lat"
+			],
+			[
+				"change",
+				"change_position"
+			],
+			[
+				"lat",
+				"latitud"
+			],
+			[
+				"setin",
+				"setInterval(funcToCall, millis)	jasmine.js"
+			],
+			[
+				"te",
+				"texto"
+			],
+			[
+				"ea",
+				"each	$.each()"
+			],
+			[
+				"html",
+				"html"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"wh",
+				"width"
+			],
+			[
+				"first",
+				"first_time"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "controlador_hospitales.js",
+			"settings":
+			{
+				"buffer_size": 2652,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "datos.js",
+			"settings":
+			{
+				"buffer_size": 42053,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "datos_prueba.js",
+			"settings":
+			{
+				"buffer_size": 8950,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 3226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Leopoldo/Desktop/S.L.C.A/www/index.html",
+			"settings":
+			{
+				"buffer_size": 10293,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Leopoldo/Desktop/S.L.C.A/www/clave de la api.txt",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": ".hola{\n	overflow: hidden;\n}",
+			"settings":
+			{
+				"buffer_size": 27,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "ht",
+		"selected_items":
+		[
+			[
+				"ht",
+				"HTMLBeautify"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www"
+	],
+	"file_history":
+	[
+		"/C/Users/Leopoldo/Desktop/lucy contraseña",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/js/index.js",
+		"/C/xampp/htdocs/joomla/installation/controller/install/database.php",
+		"/C/xampp/htdocs/joomla/installation/controller/preinstall.php",
+		"/C/xampp/htdocs/joomla/installation/template/index.php",
+		"/C/xampp/htdocs/joomla/installation/index.php",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/js/controlador_hospitales.js",
+		"/F/db.sql",
+		"/C/Users/Leopoldo/base/hospitales/admin.py",
+		"/C/Users/Leopoldo/base/base/settings.py",
+		"/C/Users/Leopoldo/hola/hola/settings.py",
+		"/E/biblia.sql-master/biblia.sql",
+		"/C/Users/Leopoldo/base/hospitales/models.py",
+		"/C/Users/Leopoldo/AppData/Local/Temp/Rar$DI00.422/README.txt",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/js/lucy contraseña",
+		"/C/Users/Leopoldo/Downloads/35-122-1-PB.txt",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/index.html",
+		"/C/Users/Leopoldo/Desktop/SSC/servicio/models.py",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/clave de la api.txt",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/a.html",
+		"/C/Users/Leopoldo/Desktop/SSC/servicio/admin.py",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/js/main.js",
+		"/C/Users/Leopoldo/Desktop/Bootstrap_Metro_Dashboard-master/gallery.html",
+		"/C/Users/Leopoldo/AppData/Local/Temp/Rar$DI02.938/README.txt",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/farmacia.html",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/css/styles.css",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/js/googlemaps.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/plugins/cordova-sqlite-storage/spec/www/index.html",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/plugins/cordova-sqlite-storage/Lawnchair-adapter/Lawnchair-sqlitePlugin.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/plugins/cordova-sqlite-storage/spec/www/spec/simple-test.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/plugins/cordova-sqlite-storage/src/android/libs/sqlite-connector.jar",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/plugins/cordova-sqlite-storage/tests/tests.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/lib/materialize/font/material-design-icons/LICENSE.txt",
+		"/C/Users/Leopoldo/Desktop/materialize-master/navbar.html",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/angular-material/index.js",
+		"/C/Users/Leopoldo/Desktop/Cordova-sqlite-storage-core-master/www/SQLitePlugin.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/js/angularrecur.js",
+		"/C/Users/Leopoldo/Desktop/S.L.C.A/www/hospitales.json",
+		"/C/Users/Leopoldo/Desktop/Cordova-sqlite-storage-core-master/www/index.html",
+		"/C/SSC/SSC/settings.py",
+		"/C/SSC/servicio/views.py",
+		"/C/SSC/SSC/urls.py",
+		"/C/SSC/servicio/admin.py",
+		"/C/Users/Leopoldo/Documents/Cordova-sqlite-storage-core-master/Lawnchair-adapter/test-www/index.html",
+		"/C/Users/Leopoldo/Desktop/Cordova-sqlite-storage-core-master/tests/tests.js",
+		"/C/Users/Leopoldo/AppData/Roaming/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/C/xampp/htdocs/{directory}/server.php",
+		"/C/Users/Leopoldo/Desktop/SSC/SSC/settings.py",
+		"/C/xampp/htdocs/{directory}/public/index.php",
+		"/C/xampp/htdocs/Electiva-I/app/models/persona_juridica.php",
+		"/C/xampp/htdocs/Electiva-I/dist/index.html",
+		"/C/xampp/htdocs/Electiva-I/app/views/main.html",
+		"/C/xampp/htdocs/{directory}/bootstrap/app.php",
+		"/F/1. Installation",
+		"/C/Users/Leopoldo/my-app/www/index.html",
+		"/C/Users/Leopoldo/Desktop/Nueva carpeta (2)/Desktop/leame leopoldo.txt",
+		"/C/Users/Leopoldo/comprar.txt",
+		"/C/Users/Leopoldo/AppData/Local/Temp/Rar$DI00.766/readme.txt",
+		"/C/Users/Leopoldo/AppData/Local/Temp/Rar$DI02.078/readme.txt",
+		"/C/Users/Leopoldo/prueba/www/index.html",
+		"/C/Users/Leopoldo/prueba/package.json",
+		"/C/xampp/htdocs/wordpress/wp-config-sample.php",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/index.php",
+		"/C/xampp/htdocs/wordpress/wp-content/index.php",
+		"/C/xampp/htdocs/wordpress/index.php",
+		"/C/Users/Leopoldo/Downloads/admin-ajax.php",
+		"/C/Users/Leopoldo/Downloads/add_record.php",
+		"/C/Users/Leopoldo/Desktop/Bootstrap_Metro_Dashboard-master/js/jquery.knob.modified.js",
+		"/C/Users/Leopoldo/Desktop/Bootstrap_Metro_Dashboard-master/index.html",
+		"/C/Users/Leopoldo/Downloads/guia para root tablet canaima TR10RS1.txt",
+		"/C/Users/Leopoldo/Documents/derivadas.js",
+		"/C/Users/Leopoldo/Documents/derivada.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"s3",
+			"actua",
+			"cdi",
+			"max_execution_time",
+			"Listen  ",
+			"servicio",
+			"Servicios",
+			"name",
+			", ",
+			"}",
+			"name",
+			", ",
+			"ESTABLECIMIENTOS DE ATENCION URBANOS I LAS CUMBRES",
+			"CHACAO",
+			"LAS ARENILLAS",
+			"LOS BAGRES",
+			"EL CASTRERO",
+			"LA LLANADA",
+			"FLORES",
+			"EL GUAFAL",
+			"LAS MAJAGUAS ",
+			"RÓMULO GALLEGOS ",
+			"name",
+			"PUERTA NEGRA ",
+			"name",
+			"LA ENFERMERIA",
+			"name",
+			"LA MORERA",
+			"I LA MORERA",
+			"name",
+			"LAS MAJAGUAS ",
+			"LAS PALMAS",
+			"DESTACAMENTO 28",
+			"PEDRO ZARAZA ",
+			"Clínica Médica Salud Natural Arc CA",
+			"name",
+			", ",
+			"name",
+			"Sede Principal de Clínica Urológica Quirúrgica Betania CA",
+			"Instituto Venezolano de Los Seguros Sociales (Ivss)",
+			"UEM Santa Rosalía",
+			"name",
+			"Policlínica San Juan",
+			"esta es una descricion de prueva",
+			"name",
+			"x.",
+			"s3",
+			"Ofrecemos servicios de quirófano en las 24 ",
+			"name",
+			"{\n        \"name\":\"Emergencia \",\n        \"descripcion\": \" Las 24 Horas\"\n      },",
+			"esta es una descricion de prueva",
+			"name",
+			"S.L.C.A",
+			"hospital",
+			"Hospitales",
+			"hospitales",
+			"Hospitales",
+			"nombre",
+			"Horarios",
+			"Servicios",
+			"inovaciones",
+			"forms.FloatField()",
+			"Perido",
+			"from",
+			"Ramera",
+			">",
+			"</option>",
+			"value",
+			"class",
+			"value",
+			"134",
+			"li class",
+			"ng-cl",
+			"panaelsh",
+			"var ",
+			"span",
+			"p>",
+			"class=\"iconosgrandes\"",
+			"p",
+			"<p",
+			"lng",
+			"lat",
+			"if (localStorage[\"lat\"] !== undefined) {\n      lat=localStorage[\"lat\"];\n    };",
+			"horarios",
+			"servicios",
+			"white",
+			"text",
+			"colortext",
+			"span",
+			"descripcion",
+			"horaint",
+			"Rayos",
+			"Emergencia",
+			"Laboratorio",
+			"horaint",
+			"ng-click=\"cambiarhospital(x)\"",
+			"Confi",
+			");\n",
+			"black",
+			"colorfondo",
+			"deep-orange",
+			"orange",
+			"amber",
+			"yellow",
+			"lime",
+			"light-green",
+			"light-blue",
+			"red",
+			"indigo",
+			"deep-purple",
+			"purple",
+			"pink",
+			"red",
+			"blue",
+			"cyan",
+			"teal",
+			"black",
+			"white-text",
+			"white",
+			"bottom",
+			"Agree",
+			"latitud",
+			"id",
+			"node_modules",
+			"materialize",
+			", context_instance=RequestContext(request)",
+			"92",
+			"Mapa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "controlador_hospitales.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								666,
+								666
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 81.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "datos.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8345,
+								9695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3789.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "datos_prueba.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7642,
+								7642
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 70.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Leopoldo/Desktop/S.L.C.A/www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4220,
+								4216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 658.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Leopoldo/Desktop/S.L.C.A/www/clave de la api.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								26
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ameuris.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hos",
+				"js\\controlador_hospitales.js"
+			],
+			[
+				"inde",
+				"installation\\template\\index.php"
+			],
+			[
+				"cla",
+				"www\\clave de la api.txt"
+			],
+			[
+				"sty",
+				"www\\css\\styles.css"
+			],
+			[
+				"far",
+				"www\\farmacia.html"
+			],
+			[
+				"ind",
+				"angular-material\\index.js"
+			],
+			[
+				"cont",
+				"www\\js\\controlador_hospitales.js"
+			],
+			[
+				"mai",
+				"www\\js\\main.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

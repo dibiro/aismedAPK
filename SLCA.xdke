@@ -1,0 +1,22 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "currentService": {
+      "methodapi": "restaurant_by_id",
+      "endPoint": "OpenTable",
+      "service": "OpenTable"
+    }
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "build-tab": {
+    "selectedTargets": [
+      "CORDOVA_ANDROID"
+    ]
+  }
+}
